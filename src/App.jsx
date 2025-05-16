@@ -10,10 +10,6 @@ const App = () => {
       <section className="min-h-screen"></section>
       <section className="min-h-screen"></section>
       <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section>
     </div>
   );
 };

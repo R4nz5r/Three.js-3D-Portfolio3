@@ -3,7 +3,7 @@ import { FlipWords } from "./FlipWords";
 import { motion } from "motion/react";
 
 const HeroText = () => {
-  const words = ["Secure", "Mordern", "Scalable"];
+  const words = ["Secure", "Modern", "Scalable"];
   const variants = {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
@@ -19,7 +19,7 @@ const HeroText = () => {
           transition={{ delay: 1 }}
           className="text-4xl font-medium"
         >
-          Hi I'm Ragib
+          Hi, I'm Ragib
         </motion.h1>
         <div className="flex flex-col items-start">
           <motion.p

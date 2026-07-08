@@ -61,7 +61,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/next-devevent.jpg",
+    image: "/assets/projects/devevent.jpg",
     tags: [
       {
         id: 1,
@@ -109,7 +109,7 @@ export const myProjects = [
     ],
     href: "https://cloth-e-commerce-liard.vercel.app",
     logo: "",
-    image: "/assets/projects/cloth-ecommerce.jpg",
+    image: "/assets/projects/forever.jpg",
     tags: [
       {
         id: 1,

@@ -34,13 +34,13 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          form_name: formData.name,
+          from_name: formData.name,
           to_name: "Ragib",
-          form_email: formData.email,
+          from_email: formData.email,
           to_email: "ragibshahriar43@gmail.com",
           message: formData.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
       );
       setIsLoading(false);
       setFormData({
@@ -53,7 +53,7 @@ const Contact = () => {
       setIsLoading(false);
       showAlertMessage(
         "danger",
-        "There was an error sending your message. Please try again later."
+        "There was an error sending your message. Please try again later.",
       );
     }
   };

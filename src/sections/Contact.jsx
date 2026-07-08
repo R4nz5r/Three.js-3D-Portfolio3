@@ -55,6 +55,7 @@ const Contact = () => {
         "danger",
         "There was an error sending your message. Please try again later.",
       );
+      console.error("Error sending email:", error);
     }
   };
 

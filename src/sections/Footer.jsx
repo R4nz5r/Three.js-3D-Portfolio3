@@ -12,7 +12,13 @@ const Footer = () => {
       </div>
       <div className="flex gap-3">
         {mySocials.map((social, index) => (
-          <a href={social.href} className="" key={index}>
+          <a
+            href={social.href}
+            className=""
+            key={index}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={social.icon} alt={social.name} className="w-5 h-5" />
           </a>
         ))}

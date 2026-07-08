@@ -36,7 +36,7 @@ const About = () => {
               CODE IS CRAFT
             </p>
             <Card
-              text="GRASP"
+              text="ASID"
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
               containerRef={grid2Container}
             />
@@ -61,17 +61,17 @@ const About = () => {
               containerRef={grid2Container}
             />
             <Card
-              image="assets/logos/csharp-pink.png"
+              image="assets/logos/React.png"
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
               containerRef={grid2Container}
             />
             <Card
-              image="assets/logos/dotnet-pink.png"
+              image="assets/logos/TypeScript.png"
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
               containerRef={grid2Container}
             />
             <Card
-              image="assets/logos/blazor-pink.png"
+              image="assets/logos/tanStack.png"
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
               containerRef={grid2Container}
             />

@@ -1,36 +1,47 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Bookified",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "Converts books into interactive AI conversations, letting users listen to, learn from, and discuss their favorite reads through natural voice-driven interaction.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Built with Next.js and TypeScript for a fast, type-safe full-stack architecture.",
+      "Integrated Vapi to power real-time, voice-based AI conversations about book content.",
+      "Implemented secure user authentication and session management with Clerk.",
+      "Tracked user engagement and interaction analytics using PostHog.",
+      "Designed a clean, responsive UI with Tailwind CSS and reusable component architecture.",
     ],
-    href: "",
+    href: "https://bookified-dun.vercel.app",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/Bookified.jpg",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "TypeScript",
+        path: "/assets/logos/TypeScript.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        name: "Next.js",
+        path: "/assets/logos/nextjs.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
+        name: "Vapi",
+        path: "/assets/logos/vapi.svg",
       },
       {
         id: 4,
+        name: "Clerk",
+        path: "/assets/logos/clerk.svg",
+      },
+      {
+        id: 5,
+        name: "PostHog",
+        path: "/assets/logos/posthog.svg",
+      },
+      {
+        id: 6,
         name: "TailwindCSS",
         path: "/assets/logos/tailwindcss.svg",
       },
@@ -38,23 +49,24 @@ export const myProjects = [
   },
   {
     id: 2,
-    title: "Authentication & Authorization System",
+    title: "DevEvent",
     description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+      "A hub for discovering developer events, letting users browse, explore, and join upcoming tech meetups, conferences, and hackathons they shouldn't miss.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Built with Next.js 16 and React 19 for a fast, modern full-stack architecture.",
+      "Used MongoDB with Mongoose for flexible event data modeling and storage.",
+      "Integrated Cloudinary for optimized image upload and delivery of event media.",
+      "Tracked user behavior and product analytics with PostHog.",
+      "Styled with Tailwind CSS v4 and Lucide icons, with OGL-powered visual effects for an engaging UI.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/next-devevent.jpg",
     tags: [
       {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
+        name: "Next.js",
+        path: "/assets/logos/nextjs.svg",
       },
       {
         id: 2,
@@ -63,11 +75,21 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "MongoDB",
+        path: "/assets/logos/mongodb.svg",
       },
       {
         id: 4,
+        name: "Cloudinary",
+        path: "/assets/logos/cloudinary.svg",
+      },
+      {
+        id: 5,
+        name: "PostHog",
+        path: "/assets/logos/posthog.svg",
+      },
+      {
+        id: 6,
         name: "TailwindCSS",
         path: "/assets/logos/tailwindcss.svg",
       },
@@ -75,33 +97,78 @@ export const myProjects = [
   },
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "FOREVER",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "A full-stack clothing e-commerce platform with a customer-facing storefront and a dedicated admin panel for managing products and orders.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Built a MERN stack application with separate frontend, backend, and admin panel architecture.",
+      "Used MongoDB for product, order, and user data storage.",
+      "Developed RESTful APIs with Node.js and Express for handling authentication, products, and orders.",
+      "Designed a responsive React frontend for browsing, filtering, and purchasing products.",
+      "Built a standalone admin dashboard for product and inventory management.",
     ],
-    href: "",
+    href: "https://cloth-e-commerce-liard.vercel.app",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/assets/projects/cloth-ecommerce.jpg",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "React",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "Node.js",
+        path: "/assets/logos/nodejs.svg",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "Express",
+        path: "/assets/logos/express.svg",
+      },
+      {
+        id: 4,
+        name: "MongoDB",
+        path: "/assets/logos/mongodb.svg",
+      },
+      {
+        id: 5,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Pure Drop Honey",
+    description:
+      "A landing page and order funnel for a honey product brand, featuring a persuasive marketing flow along with an admin dashboard for managing orders and product variants.",
+    subDescription: [
+      "Built with React, TypeScript, and Vite for a fast, modern frontend.",
+      "Designed a conversion-focused landing page with hero, problem/solution, social proof, and offer sections.",
+      "Used Supabase for the backend, including database, authentication, and edge functions.",
+      "Implemented serverless Supabase Edge Functions to handle order creation and admin operations.",
+      "Built an admin dashboard with secure login for managing orders and product variants.",
+      "Styled with Tailwind CSS and shadcn/ui components for a clean, responsive UI.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/pure-drop-honey.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/logos/TypeScript.svg",
+      },
+      {
+        id: 3,
+        name: "Supabase",
+        path: "/assets/logos/supabase.png",
       },
       {
         id: 4,
@@ -111,108 +178,33 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
-    title: "C++ Game Engine",
-    description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
-    subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/game-engine.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
-      },
-      {
-        id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
-    ],
-  },
-  {
     id: 5,
-    title: "WordPress Custom Theme",
+    title: "BeautyStor",
     description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
+      "A beauty products storefront and order management platform, built on the same Supabase-backed architecture as your other Lovable-based projects.",
     subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
+      "Built with React, TypeScript, and Vite for a fast, modern frontend.",
+      "Used Supabase for the backend, including database, authentication, and business logic.",
+      "Styled with Tailwind CSS and shadcn/ui components for a clean, responsive UI.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
+    image: "/assets/projects/beautystor.jpg",
     tags: [
       {
         id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
+        name: "React",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
+        name: "TypeScript",
+        path: "/assets/logos/TypeScript.svg",
       },
       {
         id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Online Learning Platform",
-    description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-    subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/elearning.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
+        name: "Supabase",
+        path: "/assets/logos/supabase.png",
       },
       {
         id: 4,

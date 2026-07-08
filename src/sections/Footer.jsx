@@ -25,7 +25,7 @@ const Footer = () => {
       </div>
       <p className="">
         © {new Date().getFullYear()} - All rights reserved. Developed by
-        {" Ragib "}
+        {" Ragib Shahrier"}
       </p>
     </section>
   );

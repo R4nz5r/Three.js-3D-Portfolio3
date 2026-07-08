@@ -151,9 +151,9 @@ export const myProjects = [
       "Built an admin dashboard with secure login for managing orders and product variants.",
       "Styled with Tailwind CSS and shadcn/ui components for a clean, responsive UI.",
     ],
-    href: "",
+    href: "https://pure-drop-honey.lovable.app/",
     logo: "",
-    image: "/assets/projects/pure-drop-honey.jpg",
+    image: "/assets/projects/purehoney.jpg",
     tags: [
       {
         id: 1,
@@ -187,7 +187,7 @@ export const myProjects = [
       "Used Supabase for the backend, including database, authentication, and business logic.",
       "Styled with Tailwind CSS and shadcn/ui components for a clean, responsive UI.",
     ],
-    href: "",
+    href: "https://beautystor.lovable.app/",
     logo: "",
     image: "/assets/projects/beautystor.jpg",
     tags: [

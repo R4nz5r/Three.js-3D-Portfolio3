@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import { Globe } from "../components/Globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { FrameWorks } from "../components/FrameWorks";
+import DownloadCVButton from "../components/DownloadCVButton";
 
 const About = () => {
   const grid2Container = useRef();
@@ -90,12 +91,21 @@ const About = () => {
           </figure>
         </div>
         {/* grid 4 */}
-        <div className="grid-special-color grid-4">
+        {/* <div className="grid-special-color grid-4">
           <div className="flex flex-col items-center justify-center gap-4 size-full">
             <p className="text-center headtext">
               Do you want to start a project together?
             </p>
             <CopyEmailButton />
+          </div>
+        </div> */}
+        {/* grid 4 */}
+        <div className="grid-special-color grid-4">
+          <div className="flex flex-col items-center justify-center gap-4 size-full">
+            <p className="text-center headtext">
+              Prefer reading over scrolling? Here's my resume
+            </p>
+            <DownloadCVButton />
           </div>
         </div>
         {/* grid 5 */}

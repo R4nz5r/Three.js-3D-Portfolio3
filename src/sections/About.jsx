@@ -105,7 +105,7 @@ const About = () => {
             <p className="text-center headtext">
               Prefer reading over scrolling? Here's my resume
             </p>
-            <DownloadCVButton />
+            <DownloadCVButton /> 
           </div>
         </div>
         {/* grid 5 */}

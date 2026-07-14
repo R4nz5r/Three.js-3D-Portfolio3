@@ -17,7 +17,7 @@ const Footer = () => {
             className=""
             key={index}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer" 
           >
             <img src={social.icon} alt={social.name} className="w-5 h-5" />
           </a>

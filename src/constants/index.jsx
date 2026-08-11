@@ -1,3 +1,5 @@
+import { FaGithub } from "react-icons/fa";
+
 export const myProjects = [
   {
     id: 1,
@@ -225,6 +227,11 @@ export const mySocials = [
     name: "Linkedin",
     href: "https://www.linkedin.com/in/ragib-shahrier/",
     icon: "/assets/socials/linkedIn.svg",
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/R4nz5r",
+    icon: "/assets/socials/github.svg",
   },
   {
     name: "Instagram",

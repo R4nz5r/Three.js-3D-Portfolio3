@@ -3,6 +3,57 @@ import { FaGithub } from "react-icons/fa";
 export const myProjects = [
   {
     id: 1,
+    title: "Timely Forms Ai",
+    description:
+      "An AI-powered form builder that lets users create, customize, publish, and analyze forms with AI-assisted generation and a drag-and-drop editor.",
+    subDescription: [
+      "Built a full-stack application using React, Node.js, Express, and PostgreSQL.",
+      "Integrated Google Gemini AI to generate forms from natural-language prompts.",
+      "Implemented a drag-and-drop form builder for creating and customizing dynamic forms.",
+      "Added JWT-based authentication and secure user session management.",
+      "Built real-time analytics to track form responses and user engagement.",
+      "Implemented shareable public forms for collecting responses without requiring authentication.",
+      "Styled the application with Tailwind CSS for a modern, responsive user interface.",
+    ],
+    href: "https://forms.ragibshahrier.com",
+    logo: "",
+    image: "/assets/projects/timelyFormsAi.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "Node.js",
+        path: "/assets/logos/nodejs.svg",
+      },
+      {
+        id: 3,
+        name: "Express",
+        path: "/assets/logos/express.svg",
+      },
+      {
+        id: 4,
+        name: "PostgreSQL",
+        path: "/assets/logos/postgresql.svg",
+      },
+      {
+        id: 5,
+        name: "Gemini AI",
+        path: "/assets/logos/gemini.svg",
+      },
+      {
+        id: 6,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+    ],
+  },
+
+  {
+    id: 2,
     title: "Bookified",
     description:
       "Converts books into interactive AI conversations, letting users listen to, learn from, and discuss their favorite reads through natural voice-driven interaction.",
@@ -49,8 +100,9 @@ export const myProjects = [
       },
     ],
   },
+
   {
-    id: 2,
+    id: 3,
     title: "DevEvent",
     description:
       "A hub for discovering developer events, letting users browse, explore, and join upcoming tech meetups, conferences, and hackathons they shouldn't miss.",
@@ -97,8 +149,9 @@ export const myProjects = [
       },
     ],
   },
+
   {
-    id: 3,
+    id: 4,
     title: "FOREVER",
     description:
       "A full-stack clothing e-commerce platform with a customer-facing storefront and a dedicated admin panel for managing products and orders.",
@@ -140,8 +193,9 @@ export const myProjects = [
       },
     ],
   },
+
   {
-    id: 4,
+    id: 5,
     title: "Pure Drop Honey",
     description:
       "A landing page and order funnel for a honey product brand, featuring a persuasive marketing flow along with an admin dashboard for managing orders and product variants.",
@@ -179,11 +233,12 @@ export const myProjects = [
       },
     ],
   },
+
   {
-    id: 5,
+    id: 6,
     title: "BeautyStor",
     description:
-      "A beauty products storefront and order management platform, built on the same Supabase-backed architecture as your other Lovable-based projects.",
+      "A beauty products storefront and order management platform, built on a Supabase-backed architecture.",
     subDescription: [
       "Built with React, TypeScript, and Vite for a fast, modern frontend.",
       "Used Supabase for the backend, including database, authentication, and business logic.",

@@ -101,12 +101,12 @@ async function main() {
   }
 
   // 1. Extract Project Title
-  let title = parseSection(issueBody, "Project Title");
+  let title = issueTitle.replace(/^\[Project\]:\s*/i, "").trim();
   if (!title) {
-    title = issueTitle.replace(/^\[Project\]:\s*/i, "").trim();
+    title = parseSection(issueBody, "Project Title");
   }
   if (!title) {
-    console.error("Missing project title.");
+    console.error("Missing project title. Please provide a title in the issue title (e.g. [Project]: My App).");
     process.exit(1);
   }
 

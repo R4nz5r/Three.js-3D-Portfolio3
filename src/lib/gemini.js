@@ -1,6 +1,7 @@
 import { SYSTEM_PROMPT, OFFLINE_FAQS } from "../constants/aiKnowledge";
 
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+const rawKey = import.meta.env.VITE_GEMINI_API_KEY || "";
+const API_KEY = rawKey.replace(/^["']|["']$/g, "").trim();
 // Primary model with fallback candidates (gemini-3.6-flash is thinking-enabled)
 const PRIMARY_MODEL = "gemini-3.6-flash";
 const FALLBACK_MODELS = ["gemini-3.7-flash", "gemini-flash-latest"];

@@ -1,0 +1,86 @@
+name: "🚀 Add New Portfolio Project"
+description: "Submit a new project to automatically add it to your live portfolio."
+title: "[Project]: "
+labels: ["add-project"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Add a Project to Your Portfolio
+        Fill out this form from your phone or computer to automatically publish a project to your live portfolio.
+  - type: input
+    id: project_title
+    attributes:
+      label: Project Title
+      description: The name of the project.
+      placeholder: "e.g. Vertex – AI Learning Platform"
+    validations:
+      required: true
+  - type: input
+    id: live_url
+    attributes:
+      label: Live URL / GitHub Link
+      description: The website URL or GitHub repository link.
+      placeholder: "https://your-project.com"
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Short Description
+      description: 1-2 sentence overview shown on the project card.
+      placeholder: "An AI-powered learning platform featuring intelligent timestamp-precise video search..."
+    validations:
+      required: true
+  - type: textarea
+    id: sub_description
+    attributes:
+      label: Key Highlights / Architecture Bullets
+      description: List key accomplishments, architecture details, or features (one per line).
+      placeholder: |
+        Architected a full-stack learning platform using Next.js 16 and TypeScript.
+        Engineered an intelligent search engine powered by Sanity Context MCP and Vercel AI SDK.
+        Integrated Clerk for secure authentication and progress tracking.
+    validations:
+      required: true
+  - type: checkboxes
+    id: tech_tags
+    attributes:
+      label: Tech Stack Tags
+      description: Check all technologies used in this project.
+      options:
+        - label: Next.js
+        - label: React
+        - label: TypeScript
+        - label: TailwindCSS
+        - label: Sanity CMS
+        - label: OpenAI / AI SDK
+        - label: Gemini AI
+        - label: Node.js
+        - label: Express
+        - label: PostgreSQL
+        - label: MongoDB
+        - label: Supabase
+        - label: Clerk
+        - label: PostHog
+        - label: Cloudinary
+        - label: Three.js
+        - label: Vite
+        - label: Stripe
+        - label: Vapi
+  - type: input
+    id: custom_tags
+    attributes:
+      label: Other Technologies (Optional)
+      description: Comma-separated list of any additional technologies not in the list above.
+      placeholder: "e.g. Redis, Docker, WebAPI"
+    validations:
+      required: false
+  - type: textarea
+    id: image_upload
+    attributes:
+      label: Project Screenshot / Cover Image
+      description: Drag & drop, attach, or paste an image here from your phone, or paste an image URL.
+      placeholder: "Upload your screenshot or paste an image URL here"
+    validations:
+      required: false

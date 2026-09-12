@@ -41,14 +41,24 @@ const ProjectDetails = ({
           ))}
           <div className="flex flex-col items-start gap-4 mt-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-wrap gap-3">
-              {tags.map((tag) => (
-                <img
-                  src={tag.path}
-                  key={tag.id}
-                  alt={tag.name}
-                  className="rounded-lg size-10 hover-animation"
-                />
-              ))}
+              {tags.map((tag) =>
+                tag.path ? (
+                  <img
+                    src={tag.path}
+                    key={tag.id || tag.name}
+                    alt={tag.name}
+                    title={tag.name}
+                    className="rounded-lg size-10 hover-animation"
+                  />
+                ) : (
+                  <span
+                    key={tag.id || tag.name}
+                    className="px-2.5 py-1 text-xs font-medium rounded-lg bg-neutral-800 text-neutral-300 flex items-center border border-white/10"
+                  >
+                    {tag.name}
+                  </span>
+                )
+              )}
             </div>
 
             <a

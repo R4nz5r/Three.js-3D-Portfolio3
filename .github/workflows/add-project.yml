@@ -1,0 +1,51 @@
+name: 🚀 Auto-Add Project from Issue
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  add-project:
+    name: Add Project to Portfolio
+    if: contains(github.event.issue.labels.*.name, 'add-project') || startsWith(github.event.issue.title, '[Project]:')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Parse Issue and Add Project
+        id: add_project
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/add-project-from-issue.mjs
+
+      - name: Commit and Push to Main
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "feat(portfolio): add ${{ steps.add_project.outputs.project_title }} from issue #${{ github.event.issue.number }}" && git push origin HEAD:main)
+
+      - name: Comment and Close Issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+          TITLE: ${{ steps.add_project.outputs.project_title }}
+        run: |
+          gh issue comment "$ISSUE_URL" --body "🎉 **Success!** Project **$TITLE** was automatically added to the top of your portfolio and committed to \`main\`. Your live website is now redeploying."
+          gh issue close "$ISSUE_URL" --reason completed

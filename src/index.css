@@ -47,12 +47,20 @@
     }
   }
 }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
 body {
   background: #030412;
   font-family: "Funnel Display", sans-serif;
   color: white;
-  scroll-behavior: smooth;
+  min-height: 100vh;
+  min-height: 100dvh;
   overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .c-space {

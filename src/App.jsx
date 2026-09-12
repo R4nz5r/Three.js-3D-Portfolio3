@@ -6,19 +6,23 @@ import Experiences from "./sections/Experiences";
 import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import AIBot from "./components/AIBot";
 
 const App = () => {
   return (
-    <div className="container mx-auto max-w-7xl">
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      {/* <Experiences /> */}
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <div className="container mx-auto max-w-7xl">
+        <Navbar />
+        <Hero />
+        <About />
+        <Projects />
+        {/* <Experiences /> */}
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </div>
+      <AIBot />
+    </>
   );
 };
 

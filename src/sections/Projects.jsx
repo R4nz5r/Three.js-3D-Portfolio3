@@ -19,6 +19,7 @@ const Projects = () => {
       onMouseMove={handleMouseMove}
       className="relative c-space section-spacing"
     >
+      <div id="projects" className="absolute -top-24 pointer-events-none" />
       <h2 className="text-heading">My Selected Projects</h2>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full" />
       {myProjects.map((project) => (
@@ -29,7 +30,7 @@ const Projects = () => {
           style={{ x: springX, y: springY }}
           src={preview}
           alt=""
-          className="fixed top-0 left-0 z-50 object-cover  h-56 shadow-lg rounded-lg pointer-events-none w-80"
+          className="fixed top-0 left-0 z-50 object-cover h-56 shadow-lg rounded-lg pointer-events-none w-80 hidden md:block"
         />
       )}
     </section>

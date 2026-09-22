@@ -22,8 +22,6 @@ const Navigation = ({ closeMenu }) => {
         <a
           className="nav-link"
           href="https://blog.ragibshahrier.com/"
-          target="_blank"
-          rel="noopener noreferrer"
           onClick={closeMenu}
         >
           Blog

@@ -32,6 +32,7 @@ Your mission is to represent Ragib to recruiters, clients, and fellow developers
 - **LinkedIn**: https://www.linkedin.com/in/ragib-shahrier/
 - **GitHub**: https://github.com/R4nz5r
 - **Instagram**: https://www.instagram.com/imm_ragib/
+- **Blog**: https://blog.ragibshahrier.com
 - **Resume / CV**: Available on the site and directly downloadable (/assets/Ragib_Shahrier_CV.pdf).
 
 ### Career Work Experience:

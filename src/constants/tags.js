@@ -156,6 +156,36 @@ export const TAGS = {
     name: "Stripe",
     path: "/assets/logos/stripe.svg",
   },
+  TINACMS: {
+    id: "tinacms",
+    name: "TinaCMS",
+    path: "",
+  },
+  MDX: {
+    id: "mdx",
+    name: "MDX",
+    path: "",
+  },
+  SHIKI: {
+    id: "shiki",
+    name: "Shiki",
+    path: "",
+  },
+  RESEND: {
+    id: "resend",
+    name: "Resend",
+    path: "",
+  },
+  SOCKETIO: {
+    id: "socketio",
+    name: "Socket.io",
+    path: "",
+  },
+  WEBRTC: {
+    id: "webrtc",
+    name: "WebRTC",
+    path: "",
+  },
 };
 
 // Lookup map by name (case-insensitive) for flexible tag definitions

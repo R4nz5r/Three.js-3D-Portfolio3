@@ -10,6 +10,58 @@ import { TAGS, resolveTags } from "../constants/tags";
  */
 const rawProjects = [
   {
+    id: "popcorn",
+    title: "Popcorn – Real-Time Watch Party Platform",
+    description:
+      "A live synchronized watch-party platform with real-time video synchronization, peer-to-peer screen sharing, voice chat, and host room controls.",
+    subDescription: [
+      "Architected a full-stack real-time watch party platform using Next.js 16 (App Router), React 19, TypeScript, and Tailwind CSS.",
+      "Engineered low-latency bidirectional synchronization with Socket.io to keep video playback, scrubbing, and pause states frame-accurate across all room participants.",
+      "Integrated WebRTC for peer-to-peer low-latency voice chat and desktop screen sharing directly inside the theater room.",
+      "Implemented role-based host controls with dynamic room generation, shareable invite links, participant management, and room privacy settings.",
+      "Used MongoDB with Mongoose for persistent room data, session state tracking, and user profile management.",
+      "Designed an intuitive theater UI with custom video player integration (YouTube IFrame API), light/dark themes, and responsive layout.",
+    ],
+    href: "https://popcorn.ragibshahrier.com",
+    github: "https://github.com/R4nz5r/Popcorn",
+    logo: "",
+    image: "/assets/projects/popcorn.jpg",
+    tags: [
+      TAGS.NEXTJS,
+      TAGS.TYPESCRIPT,
+      TAGS.SOCKETIO,
+      TAGS.WEBRTC,
+      TAGS.MONGODB,
+      TAGS.TAILWINDCSS,
+    ],
+  },
+  {
+    id: "ragib-dev",
+    title: "ragib.dev – Tech Blog & Knowledge Base",
+    description:
+      "A fast, content-first developer blog and technical notebook featuring MDX articles, TinaCMS visual editing, Shiki syntax highlighting, instant client search, and newsletter integration.",
+    subDescription: [
+      "Architected a content-first technical blog platform using Next.js 16, React 19, TypeScript, and Tailwind CSS v4.",
+      "Integrated TinaCMS for Git-backed visual content authoring with structured frontmatter schemas validated via Zod.",
+      "Engineered an instant client-side full-text search index powered by MiniSearch with a global keyboard shortcut (⌘K).",
+      "Built an optimized MDX rendering pipeline featuring Shiki syntax highlighting, interactive code blocks, table of contents, and estimated read times.",
+      "Configured automated newsletter subscription workflows and post notification broadcasts powered by Resend.",
+      "Integrated dynamic RSS feed generation, SEO OpenGraph metadata, and open-source GitHub release workflow.",
+    ],
+    href: "https://blog.ragibshahrier.com",
+    github: "https://github.com/R4nz5r/ragib.dev",
+    logo: "",
+    image: "/assets/projects/ragibdev.jpg",
+    tags: [
+      TAGS.NEXTJS,
+      TAGS.TYPESCRIPT,
+      TAGS.TAILWINDCSS,
+      TAGS.TINACMS,
+      TAGS.MDX,
+      TAGS.RESEND,
+    ],
+  },
+  {
     id: "vertex",
     title: "Vertex – AI Learning Platform",
     description:

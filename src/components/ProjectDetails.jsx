@@ -6,6 +6,7 @@ const ProjectDetails = ({
   description,
   subDescription,
   href,
+  github,
   image,
   tags,
   closeModal,
@@ -62,17 +63,38 @@ const ProjectDetails = ({
               )}
             </div>
 
-            <a
-              href={href}
-              className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation shrink-0"
-            >
-              View Project{" "}
-              <img
-                src="assets/arrow-up.svg"
-                alt="arrow up icon"
-                className="size-4"
-              />
-            </a>
+            <div className="flex flex-wrap items-center gap-4">
+              {github && (
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 font-medium cursor-pointer text-neutral-300 hover:text-white hover-animation shrink-0"
+                >
+                  <img
+                    src="/assets/socials/github.svg"
+                    alt="GitHub"
+                    className="w-4 h-4"
+                  />
+                  <span>GitHub</span>
+                </a>
+              )}
+              {href && (
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation shrink-0"
+                >
+                  View Project{" "}
+                  <img
+                    src="assets/arrow-up.svg"
+                    alt="arrow up icon"
+                    className="size-4"
+                  />
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </motion.div>

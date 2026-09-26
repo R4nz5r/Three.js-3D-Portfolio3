@@ -48,26 +48,34 @@ Your mission is to represent Ragib to recruiters, clients, and fellow developers
    - Developed performant desktop and visualization tools with C++ and modern frameworks.
 
 ### Key Projects:
-1. **Vertex – AI Learning Platform**
+1. **Popcorn – Real-Time Watch Party Platform**
+   - Tech: Next.js 16, React 19, TypeScript, Socket.io, WebRTC, MongoDB, Tailwind CSS.
+   - Features: Synchronized video streaming, low-latency Socket.io playback sync, peer-to-peer screen sharing, voice chat, and live host controls.
+   - Live URL: https://popcorn.ragibshahrier.com | GitHub: https://github.com/R4nz5r/Popcorn
+2. **ragib.dev – Personal Tech Blog & Knowledge Base**
+   - Tech: Next.js 16, React 19, TypeScript, Tailwind CSS v4, TinaCMS, Shiki, MiniSearch, Resend.
+   - Features: Content-first technical blog, visual Git-backed TinaCMS editing, instant full-text client search (⌘K), Shiki syntax highlighting, and email newsletter broadcasts.
+   - Live URL: https://blog.ragibshahrier.com | GitHub: https://github.com/R4nz5r/ragib.dev
+3. **Vertex – AI Learning Platform**
    - Tech: Next.js 16, React 19, TypeScript, Tailwind CSS, Sanity Studio CMS, OpenAI / Vercel AI SDK, Clerk Auth, PostHog.
    - Features: Intelligent timestamp-precise video search, natural language transcript search, learner progress tracking, interactive curricula.
    - Live URL: https://vertex.ragibshahrier.com
-2. **Timely Forms Ai – Intelligent Form Builder**
+4. **Timely Forms Ai – Intelligent Form Builder**
    - Tech: React, Node.js, Express, PostgreSQL, Google Gemini AI, Tailwind CSS.
    - Features: Generates multi-field forms from natural language prompts using Google Gemini; drag-and-drop customization; real-time analytics.
    - Live URL: https://forms.ragibshahrier.com
-3. **Bookified – Voice AI Book Companion**
+5. **Bookified – Voice AI Book Companion**
    - Tech: Next.js, TypeScript, Vapi Voice AI, Clerk, PostHog, Tailwind CSS.
    - Features: Real-time voice-driven conversations about books; interactive audio discussions.
    - Live URL: https://bookified-dun.vercel.app
-4. **DevEvent – Tech Meetup & Event Hub**
+6. **DevEvent – Tech Meetup & Event Hub**
    - Tech: Next.js 16, React 19, MongoDB, Cloudinary, PostHog, Tailwind CSS v4, OGL.
    - Features: Discover, explore, and join upcoming tech meetups, conferences, and hackathons with interactive visual effects.
-5. **FOREVER – Clothing E-Commerce**
+7. **FOREVER – Clothing E-Commerce**
    - Tech: MERN Stack (MongoDB, Express, React, Node.js), Tailwind CSS.
    - Features: Full-stack online storefront with dedicated product and order management admin panel.
    - Live URL: https://cloth-e-commerce-liard.vercel.app
-6. **Pure Drop Honey & BeautyStor**
+8. **Pure Drop Honey & BeautyStor**
    - Tech: React, TypeScript, Vite, Supabase, Tailwind CSS.
    - Features: High-converting landing pages, Supabase backend, edge functions, and admin order management.
 
@@ -98,8 +106,10 @@ export const OFFLINE_FAQS = [
 [ACTION:SCROLL_PROJECTS] [ACTION:DOWNLOAD_CV]`,
   },
   {
-    keywords: ["project", "work", "portfolio", "built", "apps", "vertex", "timely"],
+    keywords: ["project", "work", "portfolio", "built", "apps", "popcorn", "vertex", "timely", "ragib.dev", "blog"],
     response: `Here are some of Ragib's flagship projects:
+• **Popcorn**: Real-time watch party platform with Socket.io video sync & WebRTC voice/screen sharing
+• **ragib.dev**: Personal tech blog & engineering notebook (Next.js 16, TinaCMS, MDX, MiniSearch, Resend)
 • **Vertex**: AI Learning Platform with timestamp-precise video search (Next.js 16, Vercel AI SDK, Sanity)
 • **Timely Forms AI**: Intelligent form generator powered by Google Gemini AI
 • **Bookified**: Voice-driven AI book companion (Vapi, Next.js)

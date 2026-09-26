@@ -37,7 +37,7 @@ const rawProjects = [
   },
   {
     id: "ragib-dev",
-    title: "ragib.dev – Tech Blog & Knowledge Base",
+    title: "Ragib.Dev – Tech Blog & Knowledge Base",
     description:
       "A fast, content-first developer blog and technical notebook featuring MDX articles, TinaCMS visual editing, Shiki syntax highlighting, instant client search, and newsletter integration.",
     subDescription: [

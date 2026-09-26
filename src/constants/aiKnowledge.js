@@ -52,7 +52,7 @@ Your mission is to represent Ragib to recruiters, clients, and fellow developers
    - Tech: Next.js 16, React 19, TypeScript, Socket.io, WebRTC, MongoDB, Tailwind CSS.
    - Features: Synchronized video streaming, low-latency Socket.io playback sync, peer-to-peer screen sharing, voice chat, and live host controls.
    - Live URL: https://popcorn.ragibshahrier.com | GitHub: https://github.com/R4nz5r/Popcorn
-2. **ragib.dev – Personal Tech Blog & Knowledge Base**
+2. **Ragib.Dev – Personal Tech Blog & Knowledge Base**
    - Tech: Next.js 16, React 19, TypeScript, Tailwind CSS v4, TinaCMS, Shiki, MiniSearch, Resend.
    - Features: Content-first technical blog, visual Git-backed TinaCMS editing, instant full-text client search (⌘K), Shiki syntax highlighting, and email newsletter broadcasts.
    - Live URL: https://blog.ragibshahrier.com | GitHub: https://github.com/R4nz5r/ragib.dev
